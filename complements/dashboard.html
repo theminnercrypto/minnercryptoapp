@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" CONTENT="no-cache">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    Dashboard | Minner Crypto
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <!-- Smartsupp Live Chat script -->
+  <script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = '0695abd3a66f32ddacae6f8ccef7baa798ab56c5';
+    window.smartsupp||(function(d) {
+      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+      s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+      c.type='text/javascript';c.charset='utf-8';c.async=true;
+      c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+    })(document);
+  </script>
+  <!-- End Smartsupp Live Chat script -->
+</head>
+
+<body class="hidden">
+  <!-- Preloader -->
+  <div class="central-pre" id="onload">
+    <div class="lds-heart">
+      <img src="../assets/img/favicon.png">
+      <div style="margin-top: 65px; margin-left: 14px; text-align: center;">
+        <div class="progress" style="height: 1.5vh;">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+        </div>
+         <h6 style="margin-top: 1vh; font-size: 11px;">Cargando Recursos...</h6>
+      </div>
+    </div>
+  </div>
+  <!-- End Preloader -->
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="sidebar-wrapper">
+        <div class="logo">
+          <a href="#" class="simple-text logo-normal text-center">
+            Minner Crypto
+          </a>
+        </div>
+        <ul class="nav">
+          <li class="active">
+            <a href="./dashboard.html">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Tablero</p>
+            </a>
+          </li>
+          <li>
+            <a href="./balance.html">
+              <i class="tim-icons icon-wallet-43"></i>
+              <p>Balance</p>
+            </a>
+          </li>
+          <li>
+            <a href="./referral.html">
+              <i class="tim-icons icon-user-run"></i>
+              <p>Referidos</p>
+            </a>
+          </li>
+          <li>
+            <a href="./rewards.html">
+              <i class="tim-icons icon-gift-2"></i>
+              <p>Recompensas</p>
+            </a>
+          </li>
+          <li>
+            <a href="./profile.html">
+              <i class="tim-icons icon-badge"></i>
+              <p>Perfil de Usuario</p>
+            </a>
+          </li>
+          <li>
+            <a href="./market.html">
+              <i class="tim-icons icon-coins"></i>
+              <p>Precio del Mercado</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="dropdown nav-item">
+                <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="notification d-none d-lg-block d-xl-block"></div>
+                  <i class="tim-icons icon-sound-wave"></i>
+                  <p class="d-lg-none">
+                    Notificaciones
+                  </p>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
+                  <li class="nav-link"><a href="#" class="nav-item dropdown-item">Mike John responded to your email</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">You have 5 more tasks</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Your friend Michael is in town</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Another notification</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Another one</a></li>
+                </ul>
+              </li>
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="photo">
+                    <img src="../assets/img/anime3.png" alt="Profile Photo">
+                  </div>
+                  <b class="caret d-none d-lg-block d-xl-block"></b>
+                  <p class="d-lg-none">
+                    Cerrar Sesión
+                  </p>
+                </a>
+                <ul class="dropdown-menu dropdown-navbar">
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Perfil</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item" onclick="logout()">Cerrar Sesión</a></li>
+                </ul>
+              </li>
+              <li class="separator d-lg-none"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row" id="native">
+          <div class="col-md-12">
+            <p class="text-muted">Bienvenid@ Cliente Nativo</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center"><br>
+                    <h2 class="title">Seleccione su plan para proceder a activar su cuenta</h2>
+                  </div>
+                </div>
+                  <div id="generic_price_table">   
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-4">
+                            <div class="generic_content clearfix">
+                                <div class="generic_head_price clearfix">
+                                    <div class="generic_head_content clearfix">
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                          <span>BÁSICO</span>
+                                        </div>
+                                    </div>
+                                    <div class="generic_price_tag clearfix">	
+                                        <span class="price">
+                                            <span class="sign">$</span>
+                                            <span class="currency">80</span>
+                                            <span class="month">/MIN</span>
+                                        </span>
+                                    </div>
+                                </div>                            
+                                <div class="generic_feature_list">
+                                  <ul>
+                                    <li><span>$10,66</span> Ganancias Diarias</li>
+                                    <li><span>15 días</span> Duración</li>
+                                    <li><span>Bitcoin</span> Aceptamos</li>
+                                    <li><span>$160,00</span> Total en Ganancias</li>
+                                    <li><span>$20,00</span> Inscripción</li>
+                                  </ul>
+                                </div>
+                                <div class="generic_price_btn clearfix">
+                                  <a class="" href="https://commerce.coinbase.com/checkout/c99258d6-da88-4c8e-8841-db973277c76a" target="_blank">Comprar Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="generic_content clearfix">
+                              <div class="generic_head_price clearfix">
+                                  <div class="generic_head_content clearfix">
+                                      <div class="head_bg"></div>
+                                      <div class="head">
+                                        <span>STANDARD</span>
+                                      </div>
+                                  </div>
+                                  <div class="generic_price_tag clearfix">	
+                                      <span class="price">
+                                          <span class="sign">$</span>
+                                          <span class="currency">250</span>
+                                          <span class="month">/MIN</span>
+                                      </span>
+                                  </div>
+                              </div>                            
+                              <div class="generic_feature_list">
+                                <ul>
+                                  <li><span>$33,33</span> Ganancias Diarias</li>
+                                  <li><span>15 días</span> Duración</li>
+                                  <li><span>+</span> Retiro Instantaneo</li>
+                                  <li><span>Bitcoin / Otros</span> Aceptamos</li>
+                                  <li><span>$500,00</span> Total en Ganancias</li>
+                                </ul>
+                              </div>
+                              <div class="generic_price_btn clearfix">
+                                <a class="" href="https://commerce.coinbase.com/checkout/d0813180-d0c1-4f5a-b952-50b53bf1679f" target="_blank">Comprar Plan</a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="generic_content clearfix">
+                                <div class="generic_head_price clearfix">
+                                    <div class="generic_head_content clearfix">
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                          <span>PREMIUM</span>
+                                        </div>
+                                    </div>
+                                    <div class="generic_price_tag clearfix">	
+                                        <span class="price">
+                                            <span class="sign">$</span>
+                                            <span class="currency">500</span>
+                                            <span class="month">/MIN</span>
+                                        </span>
+                                    </div>
+                                </div>                            
+                                <div class="generic_feature_list">
+                                  <ul>
+                                    <li><span>$66,66</span> Ganancias Diarias</li>
+                                    <li><span>15 días</span> Duración</li>
+                                    <li><span>+</span> Retiro Instantaneo</li>
+                                    <li><span>Bitcoin / Otros</span> Aceptamos</li>
+                                    <li><span>$1.000,00</span> Total en Ganancias</li>
+                                  </ul>
+                                </div>
+                                <div class="generic_price_btn clearfix">
+                                  <a class="" href="https://commerce.coinbase.com/checkout/9cffde6f-f3cd-4d01-bc0c-9dfa0e76fa19" target="_blank">Comprar Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </br>
+                      <div class="row">
+                        <div class="col-md-4">
+                            <div class="generic_content clearfix">
+                                <div class="generic_head_price clearfix">
+                                    <div class="generic_head_content clearfix">
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                          <span>PRO</span>
+                                        </div>
+                                    </div>
+                                    <div class="generic_price_tag clearfix">	
+                                        <span class="price">
+                                            <span class="sign">$</span>
+                                            <span class="currency">1.000</span>
+                                            <span class="month">/MIN</span>
+                                        </span>
+                                    </div>
+                                </div>                            
+                                <div class="generic_feature_list">
+                                  <ul>
+                                    <li><span>$166,66</span> Ganancias Diarias</li>
+                                    <li><span>15 días</span> Duración</li>
+                                    <li><span>+</span> Retiro Instantaneo</li>
+                                    <li><span>Bitcoin / Otros</span> Aceptamos</li>
+                                    <li><span>$2.500,00</span> Total en Ganancias</li>
+                                  </ul>
+                                </div>
+                                <div class="generic_price_btn clearfix">
+                                  <a class="" href="https://commerce.coinbase.com/checkout/90a284d7-0f07-43f1-83c8-3949b4c46cdd" target="_blank">Comprar Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="generic_content clearfix">
+                              <div class="generic_head_price clearfix">
+                                  <div class="generic_head_content clearfix">
+                                      <div class="head_bg"></div>
+                                      <div class="head">
+                                        <span>ULTRA</span>
+                                      </div>
+                                  </div>
+                                  <div class="generic_price_tag clearfix">	
+                                      <span class="price">
+                                          <span class="sign">$</span>
+                                          <span class="currency">5.000</span>
+                                          <span class="month">/MIN</span>
+                                      </span>
+                                  </div>
+                              </div>                            
+                              <div class="generic_feature_list">
+                                <ul>
+                                  <li><span>$833,33</span> Ganancias Diarias</li>
+                                  <li><span>15 días</span> Duración</li>
+                                  <li><span>+</span> Retiro Instantaneo</li>
+                                  <li><span>Bitcoin / Otros</span> Aceptamos</li>
+                                  <li><span>$12.500,00</span> Total en Ganancias</li>
+                                </ul>
+                              </div>
+                              <div class="generic_price_btn clearfix">
+                                <a class="" href="https://commerce.coinbase.com/checkout/1cea90b7-3a16-46f4-a1d2-f898ff966265" target="_blank">Comprar Plan</a>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="col-md-4">
+                            <div class="generic_content clearfix">
+                                <div class="generic_head_price clearfix">
+                                    <div class="generic_head_content clearfix">
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                          <span>MEGA</span>
+                                        </div>
+                                    </div>
+                                    <div class="generic_price_tag clearfix">	
+                                        <span class="price">
+                                            <span class="sign">$</span>
+                                            <span class="currency">10.000</span>
+                                            <span class="month">/MIN</span>
+                                        </span>
+                                    </div>
+                                </div>                            
+                                <div class="generic_feature_list">
+                                  <ul>
+                                    <li><span>$2.000,00</span> Ganancias Diarias</li>
+                                    <li><span>15 días</span> Duración</li>
+                                    <li><span>+</span> Retiro Instantaneo</li>
+                                    <li><span>Bitcoin / Otros</span> Aceptamos</li>
+                                    <li><span>$30.000,00</span> Total en Ganancias</li>
+                                  </ul>
+                                </div>
+                                <div class="generic_price_btn clearfix">
+                                  <a class="" href="https://commerce.coinbase.com/checkout/0265d16d-d1a6-4ab5-9a24-aa503ebaef8d" target="_blank">Comprar Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>        
+                  </div>    
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="active" style="display: none;">
+          <div class="col-md-12">
+            <p class="text-muted">Bienvenid@ Cliente Nativo</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center"><br>
+                    <h2 class="title">Minería en tiempo real</h2>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                      <div id="tradingview_c8e5f"></div>
+                      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                      <script type="text/javascript">
+                      new TradingView.widget(
+                      {
+                      "width": "100%",
+                      "height": 610,
+                      "symbol": "COINBASE:BTCUSD",
+                      "interval": "D",
+                      "timezone": "Etc/UTC",
+                      "theme": "dark",
+                      "style": "1",
+                      "locale": "es",
+                      "toolbar_bg": "#f1f3f6",
+                      "enable_publishing": false,
+                      "hide_top_toolbar": true,
+                      "hide_legend": true,
+                      "save_image": false,
+                      "container_id": "tradingview_c8e5f"
+                    }
+                      );
+                      </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="../components/legal-warning-page.html" class="nav-link">
+                Aviso Legal
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../components/privacy-policies-page.html" class="nav-link">
+                Política de Privacidad
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../components/cookies-policies-page.html" class="nav-link">
+                Política de Cookies
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="https://www.minnercrypto.com" target="_blank">- Minner Crypto</a>, Inc.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+  <script src="../assets/js/config/firebase.config.js"></script>
+  <script src="../assets/js/utils/definitions.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/preloader.js"></script>
+  <script>
+    $(document).ready(function() {
+      $().ready(function() {
+        $sidebar = $('.sidebar');
+        $navbar = $('.navbar');
+        $main_panel = $('.main-panel');
+
+        $full_page = $('.full-page');
+
+        $sidebar_responsive = $('body > .navbar-collapse');
+        sidebar_mini_active = true;
+        white_color = false;
+
+        window_width = $(window).width();
+
+        fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+
+
+        $('.fixed-plugin a').click(function(event) {
+          if ($(this).hasClass('switch-trigger')) {
+            if (event.stopPropagation) {
+              event.stopPropagation();
+            } else if (window.event) {
+              window.event.cancelBubble = true;
+            }
+          }
+        });
+
+        $('.fixed-plugin .background-color span').click(function() {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data', new_color);
+          }
+
+          if ($main_panel.length != 0) {
+            $main_panel.attr('data', new_color);
+          }
+
+          if ($full_page.length != 0) {
+            $full_page.attr('filter-color', new_color);
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.attr('data', new_color);
+          }
+        });
+
+        $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function() {
+          var $btn = $(this);
+
+          if (sidebar_mini_active == true) {
+            $('body').removeClass('sidebar-mini');
+            sidebar_mini_active = false;
+            blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+          } else {
+            $('body').addClass('sidebar-mini');
+            sidebar_mini_active = true;
+            blackDashboard.showSidebarMessage('Sidebar mini activated...');
+          }
+
+          // we simulate the window Resize so the charts will get updated in realtime.
+          var simulateWindowResize = setInterval(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 180);
+
+          // we stop the simulation of Window Resize after the animations are completed
+          setTimeout(function() {
+            clearInterval(simulateWindowResize);
+          }, 1000);
+        });
+
+        $('.switch-change-color input').on("switchChange.bootstrapSwitch", function() {
+          var $btn = $(this);
+
+          if (white_color == true) {
+
+            $('body').addClass('change-background');
+            setTimeout(function() {
+              $('body').removeClass('change-background');
+              $('body').removeClass('white-content');
+            }, 900);
+            white_color = false;
+          } else {
+
+            $('body').addClass('change-background');
+            setTimeout(function() {
+              $('body').removeClass('change-background');
+              $('body').addClass('white-content');
+            }, 900);
+
+            white_color = true;
+          }
+
+
+        });
+
+        $('.light-badge').click(function() {
+          $('body').addClass('white-content');
+        });
+
+        $('.dark-badge').click(function() {
+          $('body').removeClass('white-content');
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initDashboardPageCharts();
+
+    });
+  </script>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "black-dashboard-free"
+      });
+  </script>
+</body>
+
+</html>
